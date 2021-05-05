@@ -1,0 +1,3 @@
+/home/paul/ug4/plugins/ConvectionDiffusion/wrapper/build/CMakeFiles/rebuild_cache.dir
+/home/paul/ug4/plugins/ConvectionDiffusion/wrapper/build/CMakeFiles/ConvectionDiffusionWrapper.dir
+/home/paul/ug4/plugins/ConvectionDiffusion/wrapper/build/CMakeFiles/edit_cache.dir
