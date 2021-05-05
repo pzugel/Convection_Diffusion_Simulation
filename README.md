@@ -5,9 +5,7 @@ To compile the shared library open Terminal and run:
     cd $HOME/ug4/plugins/ConvectionDiffusion/
 	mkdir labview_wrapper
 	cd labview_wrapper
-    git clone https://github.com/pzugel/Convection_Diffusion_Simulation
-    git pull
-    cd labview_wrapper
+    git clone https://github.com/pzugel/Convection_Diffusion_Simulation .
     make
 
 TODO: 
