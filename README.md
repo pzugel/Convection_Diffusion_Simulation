@@ -46,12 +46,10 @@ Finally open up the LabVIEW project file:
 
 and run the *main.vi*.
 
-
-
-## TODO: 
+<!-- ## TODO: 
 * Wrapper only chooses between FV1 and FE
 * Implement SubsetHandler
 * Print out UG_LOG
 * Generate Plot via VTU Output
 * Neumann Boundary
-* Choose Subsets Inner/Boundary
+* Choose Subsets Inner/Boundary -->

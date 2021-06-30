@@ -354,17 +354,17 @@ int setupConvectionDiffusion(
 			solver_lucase->set_convergence_check(make_sp(&convCheck));
 			domainDisc->assemble_linear(*A, *b);
 			domainDisc->adjust_solution(*u);
-			UG_LOG("** Starting Linear solver ... ");
+			UG_LOG("** Starting Solver ... ");
 
 			if(solver_lucase->init(make_sp(A)) == false)
 			{
-				UG_LOG("Initialization of Linear Solver failed.\n\n");
+				UG_LOG("Initialization of Solver failed.\n\n");
 				return 1;
 			}
 			
 			if(solver_lucase->apply_return_defect(*u,*b) == false)
 			{
-				UG_LOG("Linear Solver did not converge.\n\n");
+				UG_LOG("Solver did not converge.\n\n");
 				return 2;
 			}
 		} catch (ug::UGError e) {
@@ -377,17 +377,17 @@ int setupConvectionDiffusion(
 		try{
 			domainDisc->assemble_linear(*A, *b);
 			domainDisc->adjust_solution(*u);
-			UG_LOG("** Starting Linear solver ... ");
+			UG_LOG("** Starting Solver ... ");
 
 			if(solver->init(make_sp(A)) == false)
 			{
-				UG_LOG("Initialization of Linear Solver failed.\n\n");
+				UG_LOG("Initialization of Solver failed.\n\n");
 				return 1;
 			}
 			
 			if(solver->apply_return_defect(*u,*b) == false)
 			{
-				UG_LOG("Linear Solver did not converge.\n\n");
+				UG_LOG("Solver did not converge.\n\n");
 				return 2;
 			}
 		} catch (ug::UGError e) {
